@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Bed Availability</title>
+</head>
+    <style>
+            /* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hospital-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.hospital {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hospital h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hospital p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hospital a {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+    </style>
+<body>
+  <header>
+    <h1>Hospital Bed Availability</h1>
+  </header>
+  <main>
+    <div class="hospital-list">
+      <div class="hospital">
+        <h2>Hospital A</h2>
+        <p>Available Beds: 20</p>
+        <a href="appo.html">Book appointment</a>
+      </div>
+      <div class="hospital">
+        <h2>Hospital B</h2>
+        <p>Available Beds: 15</p>
+        <a href="appo.html">Book appointment</a>
+      </div>
+      <div class="hospital">
+        <h2>Hospital C</h2>
+        <p>Available Beds: 25</p>
+        <a href="appo.html">Book appointment</a>
+      </div>
+      <div class="hospital">
+        <h2>Hospital D</h2>
+        <p>Available Beds: 22</p>
+        <a href="appo.html">Book appointment</a>
+      </div>
+      <div class="hospital">
+        <h2>Hospital E</h2>
+        <p>Available Beds: 30</p>
+        <a href="appo.html">Book appointment</a>
+      </div>
+      <!-- Add more hospital entries as needed -->
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Hospital Bed Availability</p>
+  </footer>
+</body>
+</html>

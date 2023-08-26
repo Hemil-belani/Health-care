@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Appointment</title>
+</head>
+    <style>
+        /* Reset some default styles */
+body, h1, h2, p, label, input, select, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.appointment-form {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+    </style>
+<body>
+  <header>
+    <h1>Hospital Appointment Booking</h1>
+  </header>
+  <main>
+    <form class="appointment-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="doctor">Select Doctor:</label>
+      <select id="doctor" name="doctor" required>
+        <option value="dr_smith">Dr. Smith</option>
+        <option value="dr_jones">Dr. Jones</option>
+        <option value="dr_doe">Dr. Doe</option>
+      </select>
+      
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+      
+      <button type="submit">Book Appointment</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Hospital Appointment Booking</p>
+  </footer>
+</body>
+</html>
